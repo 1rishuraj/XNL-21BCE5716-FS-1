@@ -23,7 +23,7 @@ export function Send(){
         if(currency!="INR"){
             const fetchExchangeRate = async () => {
                 try {
-                    const res = await axios.get(`https://api.exchangeratesapi.io/v1/latest?access_key=cd990e864769cc831acbe4851c87322f`);
+                    const res = await axios.get(`https://api.exchangeratesapi.io/v1/latest?access_key=cb00a8c433bbc3e5f6074d9e1948f43e`);
                     
                     if (res.data.rates["INR"]) {
                         var newRate = parseFloat(res.data.rates["INR"]); 
